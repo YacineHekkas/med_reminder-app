@@ -7,4 +7,6 @@ class AppColors {
   static const Color textColor = Colors.black;
   static const Color subtitleColor = Colors.black87;
   static const Color backgroundColor = Colors.white;
+  static const Color borderColor = Color(0xFFE0E0E0);
 }
+
