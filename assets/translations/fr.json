@@ -1,0 +1,12 @@
+
+{
+"hello_name": "Bonjour, {}",
+"medicines_for": "Vos médicaments pour ",
+"today": "aujourd'hui",
+"next_medicine": "Prochain médicament dans\n45 minutes",
+"bp_medicine_instruction": "Prenez vos comprimés de Diurétiques\npour la tension avec de l'eau",
+"bactrium_tablets": "Comprimés de Bactrium",
+"bactrium_instruction": "Prenez vos comprimés contre l'infection urinaire\nBactrium avec de l'eau",
+"ibuprofen_tablets": "Comprimés d'Ibuprofène",
+"ibuprofen_instruction": "Prenez vos comprimés contre l'infection urinaire\nBactrium avec de l'eau"
+}

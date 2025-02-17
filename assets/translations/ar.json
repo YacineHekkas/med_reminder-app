@@ -1,0 +1,11 @@
+{
+  "hello_name": "مرحباً، {}",
+  "medicines_for": "أدويتك لـ",
+  "today": "اليوم",
+  "next_medicine": "الدواء التالي في\n45 دقيقة",
+  "bp_medicine_instruction": "تناول أقراص خافض الضغط\nمع الماء",
+  "bactrium_tablets": "أقراص باكتريم",
+  "bactrium_instruction": "تناول أقراص علاج التهاب المسالك البولية\nباكتريم مع الماء",
+  "ibuprofen_tablets": "أقراص ايبوبروفين",
+  "ibuprofen_instruction": "تناول أقراص علاج التهاب المسالك البولية\nباكتريم مع الماء"
+}
