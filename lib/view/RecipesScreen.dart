@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:untitled_med/view/widgets/foodSuggestions.dart';
+import 'package:untitled_med/view/widgets/recipeCard.dart';
 import '../constant/colors.dart';
 import '../controllers/data_controller.dart';
 import '../model/foodSuggestions.dart';
 import '../model/recipe.dart';
-
-import '../widgets/foodSuggestions.dart';
-import '../widgets/recipeCard.dart';
 
 
 class RecipesScreen extends StatefulWidget {
@@ -41,7 +40,9 @@ class _RecipesScreenState extends State<RecipesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+          backgroundColor: AppColors.backgroundColor
+      ),
       backgroundColor: AppColors.backgroundColor,
       body: SafeArea(
         child: Padding(

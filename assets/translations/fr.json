@@ -43,6 +43,11 @@
   "ingredients": "Ingrédients",
   "available_toppings": "Garnitures disponibles",
 
+  "Idea_for_Breakfast": "Idée pour votre Petit-déjeuner ",
+  "Idea_for_Lunch": "Idée pour votre Déjeuner",
+  "Idea_for_Snack": "Idée pour votre Goûter",
+  "Idea_for_Dinner": "Idée pour votre Dîner",
+
   "recipes": [
     {
       "id": "1",

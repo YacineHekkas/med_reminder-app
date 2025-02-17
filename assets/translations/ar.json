@@ -43,6 +43,12 @@
   "ingredients": "المكونات",
   "available_toppings": "الإضافات المتاحة",
 
+  "Idea_for_Breakfast": "أفكار للفطور",
+  "Idea_for_Lunch": "أفكار للغداء",
+  "Idea_for_Snack": "أفكار لوجبة خفيفة",
+  "Idea_for_Dinner": "أفكار للعشاء",
+
+
   "recipes": [
     {
       "id": "1",

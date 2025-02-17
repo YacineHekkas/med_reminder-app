@@ -48,6 +48,11 @@
   "ingredients": "Ingredients",
   "available_toppings": "Available Toppings",
 
+  "Idea_for_Breakfast": "Idea for your Breakfast",
+  "Idea_for_Lunch": "Idea for your Lunch",
+  "Idea_for_Snack": "Idea for your Snack",
+  "Idea_for_Dinner": "Idea for your Dinner",
+
 
 
 
@@ -86,6 +91,30 @@
     },
     {
       "id": "2",
+      "title": "Spice Garden",
+      "description": "15 King Street, NSW\nIndian, Contemporary",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "3",
+      "title": "Good Thai",
+      "description": "20 Queen Street, NSW\nAsian, Thai",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "4",
+      "title": "Spice Garden",
+      "description": "15 King Street, NSW\nIndian, Contemporary",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "5",
+      "title": "Good Thai",
+      "description": "20 Queen Street, NSW\nAsian, Thai",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "6",
       "title": "Spice Garden",
       "description": "15 King Street, NSW\nIndian, Contemporary",
       "imageUrl": "assets/images/plate.png"

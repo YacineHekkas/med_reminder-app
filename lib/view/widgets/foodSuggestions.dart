@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled_med/model/foodSuggestions.dart';
 
-import '../constant/colors.dart';
-import '../model/foodSuggestions.dart';
 
 
 class FoodSuggestionCard extends StatelessWidget {

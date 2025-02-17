@@ -2,143 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled_med/view/MedicineDetailPage.dart';
-import 'package:untitled_med/view/RecipesDetailsScreen.dart';
 
 import '../constant/colors.dart';
+import 'PlannerMenuScreen.dart';
 import 'RecipesScreen.dart';
 
 
-// class MedicineTrackerScreen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       body: SafeArea(
-//         child: Padding(
-//           padding: const EdgeInsets.all(20.0),
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               // Language Selector and Profile Section
-//               // Row(
-//               //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//               //   crossAxisAlignment: CrossAxisAlignment.start,
-//               //   children: [
-//               //     Container(
-//               //       width: 70,
-//               //       height: 70,
-//               //       decoration: BoxDecoration(
-//               //         shape: BoxShape.circle,
-//               //         image: DecorationImage(
-//               //           image: NetworkImage('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c09hwKQnOIyNk6GgnFy1rUPR7t6P6E.png'),
-//               //           fit: BoxFit.cover,
-//               //         ),
-//               //       ),
-//               //     ),
-//               //     LanguageSelector(),
-//               //   ],
-//               // ),
-//               Stack(
-//                 children: [
-//                   Align(
-//                     alignment: Alignment.center,
-//                     child: Container(
-//                       width: 90,
-//                       height: 90,
-//                       decoration: BoxDecoration(
-//                         shape: BoxShape.circle,
-//                         image: DecorationImage(
-//                           image: AssetImage(
-//                             'assets/images/avatar.png'
-//                           ),
-//                           fit: BoxFit.cover,
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                   Align(
-//                     alignment: Alignment.centerRight,
-//                     child: LanguageSelector(),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(height: 20),
-//
-//               // Greeting Text
-//               Center(
-//                 child: Text(
-//                   'hello_name'.tr(args: ['']),
-//                   style: const TextStyle(
-//                     fontSize: 24,
-//                     fontWeight: FontWeight.w600,
-//                   ),
-//                 ),
-//               ),
-//               const SizedBox(height: 10),
-//
-//               // Medicines Section Title
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: [
-//                   Text(
-//                     'medicines_for'.tr(),
-//                     style: const TextStyle(
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.w500,
-//                     ),
-//                   ),
-//                   Text(
-//                     'today'.tr(),
-//                     style: const TextStyle(
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.w500,
-//                       color: Colors.orange,
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//
-//               const SizedBox(height: 20),
-//
-//               // Medicine Cards
-//               GestureDetector(
-//                 onTap: (){
-//                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => MedicineDetailPage()));
-//                 },
-//                 child:MedicineCard(
-//                   title: 'next_medicine'.tr(),
-//                   subtitle: 'bp_medicine_instruction'.tr(),
-//                   color: Color(0xfff4c430),
-//                   imgPath: 'assets/images/boite.png',
-//
-//                 ),
-//               ),
-//
-//
-//               const SizedBox(height: 15),
-//
-//               MedicineCard(
-//                 title: 'bactrium_tablets'.tr(),
-//                 subtitle: 'bactrium_instruction'.tr(),
-//                 color: Color(0xffa8915f),
-//                 imgPath: 'assets/images/food.png',
-//               ),
-//
-//               const SizedBox(height: 15),
-//
-//               MedicineCard(
-//                 title: 'ibuprofen_tablets'.tr(),
-//                 subtitle: 'ibuprofen_instruction'.tr(),
-//                 color: Color(0xffffefca),
-//                 imgPath: 'assets/images/plan.png',
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
 class MedicineTrackerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -243,7 +112,7 @@ class MedicineTrackerScreen extends StatelessWidget {
 
         GestureDetector(
           onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Placeholder()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PlannerMenuScreen()));
           },
           child:
           MedicineCard(
@@ -260,6 +129,7 @@ class MedicineTrackerScreen extends StatelessWidget {
     );
   }
 }
+
 class LanguageSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
