@@ -24,6 +24,20 @@
   "set_schedule_for": "Set Schedule for {}",
   "time_n": "Time {}",
   "cancel": "Cancel",
-  "save": "Save"
+  "save": "Save",
+
+
+
+
+  "healthy_food": "Healty Food",
+  "fast_food": "Fast Food",
+  "fruits": "Fruits",
+  "drinks": "Drinks",
+  "spicy_chicken_ricemix": "Spicy Chicken Ricemix",
+  "cooking_time": "10-15 Mins",
+  "toping_for_you": "Toping for you",
+  "clear": "Clear",
+  "favorite_restaurants": "Favorite Restaurants",
+  "see_all": "See all"
 }
 

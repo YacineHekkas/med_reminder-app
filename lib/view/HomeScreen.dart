@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled_med/view/MedicineDetailPage.dart';
+import 'package:untitled_med/view/RecipesDetailsScreen.dart';
 
 import '../constant/colors.dart';
+import 'RecipesScreen.dart';
 
 
 // class MedicineTrackerScreen extends StatelessWidget {
@@ -224,21 +226,33 @@ class MedicineTrackerScreen extends StatelessWidget {
 
               const SizedBox(height: 15),
 
-              MedicineCard(
+        GestureDetector(
+          onTap: (){
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => recipesScreen()));
+          },
+          child:
+          MedicineCard(
                 title: 'bactrium_tablets'.tr(),
                 subtitle: 'bactrium_instruction'.tr(),
                 color: AppColors.secondaryColor,
                 imgPath: 'assets/images/food.png',
               ),
+        ),
 
               const SizedBox(height: 15),
 
-              MedicineCard(
+        GestureDetector(
+          onTap: (){
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Placeholder()));
+          },
+          child:
+          MedicineCard(
                 title: 'ibuprofen_tablets'.tr(),
                 subtitle: 'ibuprofen_instruction'.tr(),
                 color: AppColors.tertiaryColor,
                 imgPath: 'assets/images/plan.png',
               ),
+        )
             ],
           ),
         ),

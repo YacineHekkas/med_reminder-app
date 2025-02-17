@@ -1,0 +1,25 @@
+class Recipe {
+  final String id;
+  final String title;
+  final String description;
+  final double price;
+  final String cookingTime;
+  final String imageUrl;
+  final double rating;
+  final String category;
+  final List<String> ingredients;
+  final List<String> toppings;
+
+  Recipe({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.cookingTime,
+    required this.imageUrl,
+    required this.rating,
+    required this.category,
+    required this.ingredients,
+    required this.toppings,
+  });
+}
