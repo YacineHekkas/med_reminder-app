@@ -48,6 +48,9 @@
   "Idea_for_Snack": "Idée pour votre Goûter",
   "Idea_for_Dinner": "Idée pour votre Dîner",
 
+  "alarm_body": "Il est temps de prendre votre médicament !",
+  "alarm_title": "Rappel",
+
   "recipes": [
     {
       "id": "1",

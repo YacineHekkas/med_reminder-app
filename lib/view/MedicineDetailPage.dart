@@ -404,7 +404,7 @@ class MedicineDetailPage extends StatelessWidget {
                           context: context,
                           builder: (context) => ScheduleEditorDialog(
                             medicineName: 'antihistamine'.tr(),
-                            initialTimes: null,
+
                           ),
                         );
 
