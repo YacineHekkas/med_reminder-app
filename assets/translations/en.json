@@ -38,6 +38,58 @@
   "toping_for_you": "Toping for you",
   "clear": "Clear",
   "favorite_restaurants": "Favorite Restaurants",
-  "see_all": "See all"
+  "see_all": "See all",
+
+
+
+  "list_of_recipes": "List of Recipes",
+  "dietary_recommendations": "Dietary Recommendations",
+  "cooking_time": "Cooking Time: {}",
+  "ingredients": "Ingredients",
+  "available_toppings": "Available Toppings",
+
+
+
+
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Grilled skewers",
+      "description": "Spicy mutton",
+      "price": 36.00,
+      "cookingTime": "10-15 Mins",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.5,
+      "category": "Fast Food",
+      "ingredients": ["Mutton", "Spices", "Bell Peppers", "Onions"],
+      "toppings": ["Sauce", "Fresh Herbs", "Chili"]
+    },
+    {
+      "id": "2",
+      "title": "Thai Spaghetti",
+      "description": "Fresh Tomato",
+      "price": 12.00,
+      "cookingTime": "15-20 Mins",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.8,
+      "category": "Fast Food",
+      "ingredients": ["Spaghetti", "Tomatoes", "Thai Basil", "Garlic"],
+      "toppings": ["Parmesan", "Basil Leaves", "Chili Flakes"]
+    }
+  ],
+  "foodSuggestions": [
+    {
+      "id": "1",
+      "title": "Good Thai",
+      "description": "20 Queen Street, NSW\nAsian, Thai",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "2",
+      "title": "Spice Garden",
+      "description": "15 King Street, NSW\nIndian, Contemporary",
+      "imageUrl": "assets/images/plate.png"
+    }
+  ]
 }
 

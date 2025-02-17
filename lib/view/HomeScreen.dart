@@ -228,7 +228,7 @@ class MedicineTrackerScreen extends StatelessWidget {
 
         GestureDetector(
           onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => recipesScreen()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => RecipesScreen()));
           },
           child:
           MedicineCard(

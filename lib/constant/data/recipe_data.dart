@@ -50,10 +50,3 @@ final List<Recipe> recipes = [
   // Add more recipes as needed
 ];
 
-List<Recipe> getRecipesByCategory(String category) {
-  return recipes.where((recipe) => recipe.category == category).toList();
-}
-
-Recipe getRecipeById(String id) {
-  return recipes.firstWhere((recipe) => recipe.id == id);
-}

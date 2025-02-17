@@ -1,12 +1,86 @@
-
 {
-"hello_name": "Bonjour, {}",
-"medicines_for": "Vos médicaments pour ",
-"today": "aujourd'hui",
-"next_medicine": "Prochain médicament dans\n45 minutes",
-"bp_medicine_instruction": "Prenez vos comprimés de Diurétiques\npour la tension avec de l'eau",
-"bactrium_tablets": "Comprimés de Bactrium",
-"bactrium_instruction": "Prenez vos comprimés contre l'infection urinaire\nBactrium avec de l'eau",
-"ibuprofen_tablets": "Comprimés d'Ibuprofène",
-"ibuprofen_instruction": "Prenez vos comprimés contre l'infection urinaire\nBactrium avec de l'eau"
+  "hello_name": "Bienvenue à nouveau {}",
+  "medicines_for": "Vos médicaments pour ",
+  "today": "aujourd'hui",
+  "next_medicine": "Votre médicament ",
+  "bp_medicine_instruction": "N'oubliez pas de prendre vos médicaments",
+  "bactrium_tablets": "Recettes",
+  "bactrium_instruction": "Découvrez des plats sains et délicieux",
+  "ibuprofen_tablets": "Planificateur de menus quotidiens",
+  "ibuprofen_instruction": "Planifiez vos repas sains et inspirez-vous de délicieuses recettes",
+  "your_medicine": "Votre médicament",
+  "antihistamine": "Antihistaminique",
+  "antihistamine_description": "Les antihistaminiques sont des médicaments couramment utilisés pour soulager les symptômes des allergies, tels que la fièvre, les éruptions cutanées, la conjonctivite ou les réactions allergiques aux piqûres ou morsures d'insectes.",
+  "after_breakfast": "Après le petit-déjeuner",
+  "after_lunch": "Après le déjeuner",
+  "after_dinner": "Après le dîner",
+  "amount": "Quantité",
+  "3_pills_per_day": "3 comprimés/jour",
+  "month": "Mois",
+  "14_31_taken": "14/31 pris",
+  "cause": "Cause",
+  "cap_size": "Taille de la capsule",
+  "edit_schedule": "Modifier l'horaire",
+  "set_schedule_for": "Définir l'horaire pour {}",
+  "time_n": "Heure {}",
+  "cancel": "Annuler",
+  "save": "Enregistrer",
+
+  "healthy_food": "Nourriture saine",
+  "fast_food": "Restauration rapide",
+  "fruits": "Fruits",
+  "drinks": "Boissons",
+  "spicy_chicken_ricemix": "Riz au poulet épicé",
+  "cooking_time": "10-15 min",
+  "toping_for_you": "Garnitures pour vous",
+  "clear": "Effacer",
+  "favorite_restaurants": "Restaurants favoris",
+  "see_all": "Voir tout",
+
+  "list_of_recipes": "Liste des recettes",
+  "dietary_recommendations": "Recommandations alimentaires",
+  "cooking_time": "Temps de cuisson : {}",
+  "ingredients": "Ingrédients",
+  "available_toppings": "Garnitures disponibles",
+
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Brochettes grillées",
+      "description": "Agneau épicé",
+      "price": 36.00,
+      "cookingTime": "10-15 min",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.5,
+      "category": "Restauration rapide",
+      "ingredients": ["Agneau", "Épices", "Poivrons", "Oignons"],
+      "toppings": ["Sauce", "Herbes fraîches", "Piment"]
+    },
+    {
+      "id": "2",
+      "title": "Spaghetti thaïlandais",
+      "description": "Tomate fraîche",
+      "price": 12.00,
+      "cookingTime": "15-20 min",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.8,
+      "category": "Restauration rapide",
+      "ingredients": ["Spaghetti", "Tomates", "Basilic thaï", "Ail"],
+      "toppings": ["Parmesan", "Feuilles de basilic", "Flocons de piment"]
+    }
+  ],
+  "foodSuggestions": [
+    {
+      "id": "1",
+      "title": "Bon Thaï",
+      "description": "20 Rue Queen, NSW\nAsiatique, Thaïlandais",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "2",
+      "title": "Jardin des épices",
+      "description": "15 Rue King, NSW\nIndien, Contemporain",
+      "imageUrl": "assets/images/plate.png"
+    }
+  ]
 }

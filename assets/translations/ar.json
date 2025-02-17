@@ -20,5 +20,67 @@
   "14_31_taken": "تم تناول 14/31",
   "cause": "السبب",
   "cap_size": "حجم الكبسولة",
-  "edit_schedule": "تعديل الجدول"
+  "edit_schedule": "تعديل الجدول",
+  "set_schedule_for": "حدد الجدول لـ {}",
+  "time_n": "الوقت {}",
+  "cancel": "إلغاء",
+  "save": "حفظ",
+
+  "healthy_food": "طعام صحي",
+  "fast_food": "وجبات سريعة",
+  "fruits": "فواكه",
+  "drinks": "مشروبات",
+  "spicy_chicken_ricemix": "أرز بالدجاج الحار",
+  "cooking_time": "10-15 دقيقة",
+  "toping_for_you": "إضافات لك",
+  "clear": "مسح",
+  "favorite_restaurants": "المطاعم المفضلة",
+  "see_all": "عرض الكل",
+
+  "list_of_recipes": "قائمة الوصفات",
+  "dietary_recommendations": "توصيات غذائية",
+  "cooking_time": "وقت الطهي: {}",
+  "ingredients": "المكونات",
+  "available_toppings": "الإضافات المتاحة",
+
+  "recipes": [
+    {
+      "id": "1",
+      "title": "أسياخ مشوية",
+      "description": "لحم غنم متبل",
+      "price": 36.00,
+      "cookingTime": "10-15 دقيقة",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.5,
+      "category": "وجبات سريعة",
+      "ingredients": ["لحم غنم", "توابل", "فلفل رومي", "بصل"],
+      "toppings": ["صلصة", "أعشاب طازجة", "فلفل حار"]
+    },
+    {
+      "id": "2",
+      "title": "سباغيتي تايلاندية",
+      "description": "طماطم طازجة",
+      "price": 12.00,
+      "cookingTime": "15-20 دقيقة",
+      "imageUrl": "assets/images/plate.png",
+      "rating": 4.8,
+      "category": "وجبات سريعة",
+      "ingredients": ["سباغيتي", "طماطم", "ريحان تايلاندي", "ثوم"],
+      "toppings": ["جبن بارميزان", "أوراق ريحان", "رقائق فلفل حار"]
+    }
+  ],
+  "foodSuggestions": [
+    {
+      "id": "1",
+      "title": "مطعم التايلاندي الجيد",
+      "description": "20 شارع كوين، نيو ساوث ويلز\nآسيوي، تايلاندي",
+      "imageUrl": "assets/images/plate.png"
+    },
+    {
+      "id": "2",
+      "title": "حديقة التوابل",
+      "description": "15 شارع كينج، نيو ساوث ويلز\nهندي، معاصر",
+      "imageUrl": "assets/images/plate.png"
+    }
+  ]
 }

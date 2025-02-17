@@ -1,21 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled_med/model/recipe.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import '../constant/colors.dart';
+import '../model/recipe.dart';
 import '../view/RecipesDetailsScreen.dart';
 
 class RecipeCard extends StatelessWidget {
-  final recipe;
-  RecipeCard({
-    Key? key,
-    required this.recipe,
-  }) : super(key: key);
+  final Recipe recipe;
+
+  const RecipeCard({Key? key, required this.recipe}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final cardWidth = screenWidth * 0.55; // Increased from 0.45 to 0.65
+    final cardWidth = screenWidth * 0.55;
 
     return GestureDetector(
       onTap: () {
@@ -43,12 +40,10 @@ class RecipeCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Image Container with Overlays
             Expanded(
               flex: 3,
               child: Stack(
                 children: [
-                  // Image
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.vertical(
@@ -60,7 +55,6 @@ class RecipeCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Duration Badge - Top Left
                   Positioned(
                     top: 12,
                     left: 12,
@@ -100,11 +94,9 @@ class RecipeCard extends StatelessWidget {
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
-            // Text Content
             Padding(
               padding: const EdgeInsets.all(12),
               child: Column(
@@ -179,6 +171,6 @@ class RecipeCard extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }
