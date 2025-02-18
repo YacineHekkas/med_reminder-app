@@ -6,8 +6,9 @@
   "bp_medicine_instruction": "N'oubliez pas de prendre vos médicaments",
   "bactrium_tablets": "Recettes",
   "bactrium_instruction": "Découvrez des plats sains et délicieux",
-  "ibuprofen_tablets": "Planificateur de menus quotidiens",
-  "ibuprofen_instruction": "Planifiez vos repas sains et inspirez-vous de délicieuses recettes",
+  "ibuprofen_tablets": "Conseils pour votre santé",
+  "ibuprofen_instruction": "Apprenez à mieux vous connaître et découvrez les meilleurs conseils adaptés à vous.",
+
   "your_medicine": "Votre médicament",
   "antihistamine": "Antihistaminique",
   "antihistamine_description": "Les antihistaminiques sont des médicaments couramment utilisés pour soulager les symptômes des allergies, tels que la fièvre, les éruptions cutanées, la conjonctivite ou les réactions allergiques aux piqûres ou morsures d'insectes.",
@@ -164,6 +165,58 @@
       "title": "Jardin des épices",
       "description": "15 Rue King, NSW\nIndien, Contemporain",
       "imageUrl": "assets/images/plate.png"
+    }
+  ],
+
+  "health_advices": "Conseils de santé",
+  "error_message": "Erreur : {0}",
+  "no_advice_available": "Aucun conseil disponible",
+  "close": "Fermer",
+
+  "advices": [
+    {
+      "id": "1",
+      "illnessName": "Rhume",
+      "imgPath": "assets/images/ill4.png",
+      "advices": [
+        "Repos et sommeil",
+        "Rester hydraté",
+        "Se gargariser avec de l'eau salée",
+        "Utiliser un humidificateur"
+      ]
+    },
+    {
+      "id": "2",
+      "illnessName": "Grippe",
+      "imgPath": "assets/images/ill1.png",
+      "advices": [
+        "Se reposer suffisamment",
+        "Boire beaucoup de liquides",
+        "Prendre des antalgiques en vente libre",
+        "Utiliser une compresse chaude"
+      ]
+    },
+    {
+      "id": "3",
+      "illnessName": "Maux de tête",
+      "imgPath": "assets/images/ill2.png",
+      "advices": [
+        "Se reposer dans une pièce calme et sombre",
+        "Appliquer une compresse froide ou chaude",
+        "Pratiquer des techniques de relaxation",
+        "Rester hydraté"
+      ]
+    },
+    {
+      "id": "4",
+      "illnessName": "Maux de tête",
+      "imgPath": "assets/images/ill3.png",
+      "advices": [
+        "Se reposer dans une pièce calme et sombre",
+        "Appliquer une compresse froide ou chaude",
+        "Pratiquer des techniques de relaxation",
+        "Rester hydraté"
+      ]
     }
   ]
 }

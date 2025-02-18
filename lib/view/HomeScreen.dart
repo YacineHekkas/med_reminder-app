@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:untitled_med/view/AdviceScreen.dart';
 import 'package:untitled_med/view/MedicineDetailPage.dart';
 
 import '../constant/colors.dart';
@@ -113,7 +114,7 @@ class MedicineTrackerScreen extends StatelessWidget {
 
         GestureDetector(
           onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PlannerMenuScreen()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdviceScreen()));
           },
           child:
           MedicineCard(

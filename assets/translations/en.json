@@ -6,8 +6,8 @@
   "bp_medicine_instruction": "Don't forget to take your pills",
   "bactrium_tablets": "Recipes ",
   "bactrium_instruction": "Take a look at delicious healthy food",
-  "ibuprofen_tablets": "Daily Menu Planner",
-  "ibuprofen_instruction": "Plan your healthy meals and get inspired by delicious recipes",
+  "ibuprofen_tablets": "Advice for your health",
+  "ibuprofen_instruction": "Get to know yourself better and discover the best advice tailored just for you.",
   "your_medicine": "Your Medicine",
   "antihistamine": "Antihistamine",
   "antihistamine_description": "Antihistamines are medications commonly used to relieve symptoms of allergies, such as fever, rash, conjunctivitis, or allergic reactions to insect bites or stings.",
@@ -195,6 +195,58 @@
       "title": "Spice Garden",
       "description": "15 King Street, NSW\nIndian, Contemporary",
       "imageUrl": "assets/images/plate.png"
+    }
+  ],
+
+  "health_advices": "Health Advices",
+  "error_message": "Error: {0}",
+  "no_advice_available": "No advice available",
+  "close": "Close",
+
+  "advices": [
+    {
+      "id": "1",
+      "illnessName": "Common Cold",
+      "imgPath": "assets/images/ill4.png",
+      "advices": [
+        "Rest and sleep",
+        "Stay hydrated",
+        "Gargle with salt water",
+        "Use a humidifier"
+      ]
+    },
+    {
+      "id": "2",
+      "illnessName": "Flu",
+      "imgPath": "assets/images/ill1.png",
+      "advices": [
+        "Get plenty of rest",
+        "Drink fluids",
+        "Take over-the-counter pain relievers",
+        "Use a warm compress"
+      ]
+    },
+    {
+      "id": "3",
+      "illnessName": "Headache",
+      "imgPath": "assets/images/ill2.png",
+      "advices": [
+        "Rest in a quiet, dark room",
+        "Apply a cold or warm compress",
+        "Practice relaxation techniques",
+        "Stay hydrated"
+      ]
+    },
+    {
+      "id": "4",
+      "illnessName": "Headache",
+      "imgPath": "assets/images/ill3.png",
+      "advices": [
+        "Rest in a quiet, dark room",
+        "Apply a cold or warm compress",
+        "Practice relaxation techniques",
+        "Stay hydrated"
+      ]
     }
   ]
 }
