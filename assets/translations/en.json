@@ -58,32 +58,107 @@
 
 
 
-  "recipes": [
+  "recipes":[
     {
       "id": "1",
-      "title": "Grilled skewers",
-      "description": "Spicy mutton",
-      "price": 36.00,
-      "cookingTime": "10-15 Mins",
-      "imageUrl": "assets/images/plate.png",
-      "rating": 4.5,
-      "category": "Fast Food",
-      "ingredients": ["Mutton", "Spices", "Bell Peppers", "Onions"],
-      "toppings": ["Sauce", "Fresh Herbs", "Chili"]
+      "title": "Turmeric Vegetable Soup",
+      "description": "Heat olive oil in a pot and sauté the onion and garlic until soft. Add the chopped carrots, potatoes, and zucchini, then pour in water or vegetable broth. Stir in turmeric, salt, and black pepper, and let the mixture simmer until the vegetables are tender. Blend the soup until smooth and serve warm.",
+      "price": 20.00,
+      "cookingTime": "25-30 Mins",
+      "imageUrl": "assets/images/2.jpg",
+      "rating": 4.7,
+      "category": "Healthy Food",
+      "ingredients": [
+        "Carrot",
+        "Potato",
+        "Zucchini",
+        "Onion",
+        "Garlic",
+        "Turmeric",
+        "Water or Vegetable Broth",
+        "Salt",
+        "Black Pepper",
+        "Olive Oil"
+      ],
+      "toppings": ["Fresh Herbs", "Croutons"]
     },
     {
       "id": "2",
-      "title": "Thai Spaghetti",
-      "description": "Fresh Tomato",
-      "price": 12.00,
-      "cookingTime": "15-20 Mins",
-      "imageUrl": "assets/images/plate.png",
+      "title": "Fruit Salad with Turmeric and Honey",
+      "description": "Chop the fruits into small cubes. In a bowl, mix the fruit pieces with turmeric and honey. Serve chilled as a refreshing drink or a light dish.",
+      "price": 15.00,
+      "cookingTime": "10-15 Mins",
+      "imageUrl": "assets/images/3.jpg",
       "rating": 4.8,
-      "category": "Fast Food",
-      "ingredients": ["Spaghetti", "Tomatoes", "Thai Basil", "Garlic"],
-      "toppings": ["Parmesan", "Basil Leaves", "Chili Flakes"]
+      "category": "Fruits",
+      "ingredients": [
+        "Apple",
+        "Banana",
+        "Orange",
+        "Pomegranate",
+        "Turmeric",
+        "Honey"
+      ],
+      "toppings": ["Mint Leaves", "Chia Seeds"]
+    },
+    {
+      "id": "3",
+      "title": "Brown Rice with Turmeric",
+      "description": "Heat olive oil in a pot and add the brown rice. Stir well with turmeric. Pour in water or broth, season with salt and black pepper, then cover and cook on low heat for 40-45 minutes until the rice is fully cooked.",
+      "price": 18.00,
+      "cookingTime": "40-45 Mins",
+      "imageUrl": "assets/images/4.jpg",
+      "rating": 4.6,
+      "category": "Healthy Food",
+      "ingredients": [
+        "Brown Rice",
+        "Turmeric",
+        "Olive Oil",
+        "Salt",
+        "Black Pepper",
+        "Water or Vegetable Broth"
+      ],
+      "toppings": ["Toasted Nuts", "Fresh Parsley"]
+    },
+    {
+      "id": "4",
+      "title": "Golden Milk (Turmeric Milk)",
+      "description": "Heat the milk over low heat, then add turmeric, ginger, cinnamon, and black pepper. Stir well and let it simmer for 2 minutes. Remove from heat, add honey, and serve warm.",
+      "price": 10.00,
+      "cookingTime": "5-10 Mins",
+      "imageUrl": "assets/images/5.jpg",
+      "rating": 4.9,
+      "category": "Drinks",
+      "ingredients": [
+        "Almond or Coconut Milk",
+        "Turmeric",
+        "Grated Ginger",
+        "Honey",
+        "Cinnamon (Optional)",
+        "Black Pepper"
+      ],
+      "toppings": ["Cinnamon Powder", "Nutmeg"]
+    },
+    {
+      "id": "5",
+      "title": "Oat Bread with Turmeric",
+      "description": "Mix all the ingredients until you get a firm dough. Shape the dough into small loaves and flatten them slightly. Place the loaves in the oven at 180°C for 15 minutes. Enjoy with soup or healthy cheese.",
+      "price": 25.00,
+      "cookingTime": "15-20 Mins",
+      "imageUrl": "assets/images/6.jpg",
+      "rating": 4.5,
+      "category": "Healthy Food",
+      "ingredients": [
+        "Ground Oats",
+        "Turmeric",
+        "Salt",
+        "Olive Oil",
+        "Warm Water"
+      ],
+      "toppings": ["Sesame Seeds", "Flaxseeds"]
     }
   ],
+
   "foodSuggestions": [
     {
       "id": "1",

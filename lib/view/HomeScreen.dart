@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled_med/view/MedicineDetailPage.dart';
 
 import '../constant/colors.dart';
+import '../controllers/alarm_controller.dart';
 import 'PlannerMenuScreen.dart';
 import 'RecipesScreen.dart';
 
@@ -138,10 +139,14 @@ class LanguageSelector extends StatelessWidget {
       onSelected: (String value) async {
         // Save selected language
         final prefs = await SharedPreferences.getInstance();
+
         await prefs.setString('locale', value);
 
         // Change app language
         context.setLocale(Locale(value));
+
+        await AlarmController.updateTranslatedStrings();
+
       },
       itemBuilder: (BuildContext context) => [
         PopupMenuItem(

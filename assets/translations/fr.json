@@ -54,29 +54,104 @@
   "recipes": [
     {
       "id": "1",
-      "title": "Brochettes grillées",
-      "description": "Agneau épicé",
-      "price": 36.00,
-      "cookingTime": "10-15 min",
-      "imageUrl": "assets/images/plate.png",
-      "rating": 4.5,
-      "category": "Restauration rapide",
-      "ingredients": ["Agneau", "Épices", "Poivrons", "Oignons"],
-      "toppings": ["Sauce", "Herbes fraîches", "Piment"]
+      "title": "Soupe de légumes au curcuma",
+      "description": "Chauffez l'huile d'olive dans une casserole et faites revenir l'oignon et l'ail jusqu'à ce qu'ils deviennent tendres. Ajoutez les carottes, les pommes de terre et les courgettes coupées en morceaux, puis versez de l'eau ou du bouillon de légumes. Ajoutez le curcuma, le sel et le poivre noir, puis laissez mijoter jusqu'à ce que les légumes soient tendres. Mixez la soupe jusqu'à obtenir une texture lisse et servez chaud.",
+      "price": 20.00,
+      "cookingTime": "25-30 min",
+      "imageUrl": "assets/images/2.jpg",
+      "rating": 4.7,
+      "category": "Alimentation saine",
+      "ingredients": [
+        "Carotte",
+        "Pomme de terre",
+        "Courgette",
+        "Oignon",
+        "Ail",
+        "Curcuma",
+        "Eau ou bouillon de légumes",
+        "Sel",
+        "Poivre noir",
+        "Huile d'olive"
+      ],
+      "toppings": ["Herbes fraîches", "Croûtons"]
     },
     {
       "id": "2",
-      "title": "Spaghetti thaïlandais",
-      "description": "Tomate fraîche",
-      "price": 12.00,
-      "cookingTime": "15-20 min",
-      "imageUrl": "assets/images/plate.png",
+      "title": "Salade de fruits au curcuma et miel",
+      "description": "Coupez les fruits en petits cubes. Dans un bol, mélangez les morceaux de fruits avec du curcuma et du miel. Servez frais comme boisson rafraîchissante ou plat léger.",
+      "price": 15.00,
+      "cookingTime": "10-15 min",
+      "imageUrl": "assets/images/3.jpg",
       "rating": 4.8,
-      "category": "Restauration rapide",
-      "ingredients": ["Spaghetti", "Tomates", "Basilic thaï", "Ail"],
-      "toppings": ["Parmesan", "Feuilles de basilic", "Flocons de piment"]
+      "category": "Fruits",
+      "ingredients": [
+        "Pomme",
+        "Banane",
+        "Orange",
+        "Grenade",
+        "Curcuma",
+        "Miel"
+      ],
+      "toppings": ["Feuilles de menthe", "Graines de chia"]
+    },
+    {
+      "id": "3",
+      "title": "Riz brun au curcuma",
+      "description": "Chauffez l'huile d'olive dans une casserole et ajoutez le riz brun. Mélangez bien avec le curcuma. Versez de l'eau ou du bouillon, ajoutez du sel et du poivre noir, puis couvrez et laissez cuire à feu doux pendant 40-45 minutes jusqu'à ce que le riz soit bien cuit.",
+      "price": 18.00,
+      "cookingTime": "40-45 min",
+      "imageUrl": "assets/images/4.jpg",
+      "rating": 4.6,
+      "category": "Alimentation saine",
+      "ingredients": [
+        "Riz brun",
+        "Curcuma",
+        "Huile d'olive",
+        "Sel",
+        "Poivre noir",
+        "Eau ou bouillon de légumes"
+      ],
+      "toppings": ["Noix grillées", "Persil frais"]
+    },
+    {
+      "id": "4",
+      "title": "Lait doré (Lait au curcuma)",
+      "description": "Chauffez le lait à feu doux, puis ajoutez le curcuma, le gingembre, la cannelle et le poivre noir. Mélangez bien et laissez mijoter pendant 2 minutes. Retirez du feu, ajoutez le miel et servez chaud.",
+      "price": 10.00,
+      "cookingTime": "5-10 min",
+      "imageUrl": "assets/images/5.jpg",
+      "rating": 4.9,
+      "category": "Boissons",
+      "ingredients": [
+        "Lait d’amande ou de coco",
+        "Curcuma",
+        "Gingembre râpé",
+        "Miel",
+        "Cannelle (optionnel)",
+        "Poivre noir"
+      ],
+      "toppings": ["Poudre de cannelle", "Noix de muscade"]
+    },
+    {
+      "id": "5",
+      "title": "Pain à l'avoine et au curcuma",
+      "description": "Mélangez tous les ingrédients jusqu'à obtenir une pâte ferme. Formez de petits pains et aplatissez-les légèrement. Faites cuire au four à 180°C pendant 15 minutes. Dégustez avec de la soupe ou du fromage sain.",
+      "price": 25.00,
+      "cookingTime": "15-20 min",
+      "imageUrl": "assets/images/6.jpg",
+      "rating": 4.5,
+      "category": "Alimentation saine",
+      "ingredients": [
+        "Flocons d'avoine moulus",
+        "Curcuma",
+        "Sel",
+        "Huile d'olive",
+        "Eau tiède"
+      ],
+      "toppings": ["Graines de sésame", "Graines de lin"]
     }
   ],
+
   "foodSuggestions": [
     {
       "id": "1",
