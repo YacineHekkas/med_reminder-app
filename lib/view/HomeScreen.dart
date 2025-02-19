@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled_med/view/AdviceScreen.dart';
 import 'package:untitled_med/view/MedicineDetailPage.dart';
@@ -8,6 +9,7 @@ import '../constant/colors.dart';
 import '../controllers/alarm_controller.dart';
 import 'PlannerMenuScreen.dart';
 import 'RecipesScreen.dart';
+
 
 
 class MedicineTrackerScreen extends StatelessWidget {
@@ -136,6 +138,10 @@ class LanguageSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12), // Adds border radius
+      ),
+      color: Colors.white, //
       icon: const Icon(Icons.language),
       onSelected: (String value) async {
         // Save selected language
@@ -152,18 +158,38 @@ class LanguageSelector extends StatelessWidget {
       itemBuilder: (BuildContext context) => [
         PopupMenuItem(
           value: 'en',
-          child: Text('English'),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center, // Center align text
+            children: [
+              SvgPicture.asset('assets/images/en.svg', width: 24, height: 24),
+              SizedBox(width: 10),
+              Text('English '),
+            ],
+          ),
         ),
         PopupMenuItem(
           value: 'fr',
-          child: Text('Français'),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset('assets/images/fr.svg', width: 24, height: 24),
+              SizedBox(width: 10),
+              Text('Français'),
+            ],
+          ),
         ),
         PopupMenuItem(
           value: 'ar',
-          child: Text('العربية'),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset('assets/images/dz.svg', width: 24, height: 24),
+              SizedBox(width: 10),
+              Text('      العربية'),
+            ],
+          ),
         ),
-      ],
-    );
+      ],    );
   }
 }
 

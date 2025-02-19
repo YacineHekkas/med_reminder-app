@@ -21,6 +21,9 @@ dependencies:
   flutter_local_notifications: ^18.0.1
   android_alarm_manager_plus: ^4.0.6
   audioplayers: ^6.1.2
+  flutter_svg: ^2.0.17
+  just_audio: ^0.9.46
+  audio_session: ^0.1.25
 
 
 
@@ -41,6 +44,7 @@ flutter:
   assets:
     - assets/translations/
     - assets/images/
+    - assets/audio/
 
 
   # fonts:

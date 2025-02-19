@@ -26,7 +26,7 @@ class FoodDetailScreen extends StatelessWidget {
               flexibleSpace: FlexibleSpaceBar(
                 background: Image.asset(
                   recipe.imageUrl,
-                  fit: BoxFit.contain,
+                  fit: BoxFit.cover,
                 ),
               ),
               leading: IconButton(

@@ -1,6 +1,8 @@
 // lib/pages/medicine_detail_page.dart
+import 'package:audio_session/audio_session.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:untitled_med/view/widgets/schedule_editor_dialog.dart';
 
 import '../constant/colors.dart';
@@ -264,7 +266,154 @@ import '../constant/colors.dart';
 //   }
 // }
 //
-class MedicineDetailPage extends StatelessWidget {
+
+class MedicineDetailPage extends StatefulWidget {
+  @override
+  _MedicineDetailPageState createState() => _MedicineDetailPageState();
+}
+class _MedicineDetailPageState extends State<MedicineDetailPage> {
+  final AudioPlayer _audioPlayer = AudioPlayer();
+
+
+  @override
+  void initState() {
+    super.initState();
+    _initAudioSession();
+    _initAudioPlayer();
+  }
+
+  Future<void> _initAudioSession() async {
+    final session = await AudioSession.instance;
+    await session.configure(const AudioSessionConfiguration.speech());
+  }
+
+  Future<void> _initAudioPlayer() async {
+    try {
+      await _audioPlayer.setAsset("assets/audio/test.mp3");
+    } catch (e) {
+      print('Error loading audio: $e');
+    }
+  }
+
+  String _formatDuration(Duration duration) {
+    String twoDigits(int n) => n.toString().padLeft(2, '0');
+    final minutes = twoDigits(duration.inMinutes.remainder(60));
+    final seconds = twoDigits(duration.inSeconds.remainder(60));
+    return '$minutes:$seconds';
+  }
+
+  void _showAudioPlayerDialog() {
+    showDialog(
+
+      context: context,
+      builder: (context) => Dialog(
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24)  ,
+            color: Colors.white70,
+
+          ),
+          padding: const EdgeInsets.all(20),
+          child: StreamBuilder<PlayerState>(
+            stream: _audioPlayer.playerStateStream,
+            builder: (context, snapshot) {
+              final playerState = snapshot.data;
+              final processingState = playerState?.processingState;
+              final playing = playerState?.playing;
+
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // Progress bar
+                  StreamBuilder<Duration?>(
+                    stream: _audioPlayer.positionStream,
+                    builder: (context, snapshot) {
+                      final position = snapshot.data ?? Duration.zero;
+                      final duration = _audioPlayer.duration ?? Duration.zero;
+                      return SliderTheme(
+                        data: SliderThemeData(
+                          trackHeight: 2,
+                          thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 6),
+                        ),
+                        child: Slider(
+                          activeColor: AppColors.primaryColor,
+                          thumbColor: AppColors.primaryColor,
+                          value: position.inSeconds.toDouble(),
+                          max: duration.inSeconds.toDouble(),
+                          onChanged: (value) {
+                            _audioPlayer.seek(Duration(seconds: value.toInt()));
+                          },
+                        ),
+                      );
+                    },
+                  ),
+
+                  // Duration text
+                  StreamBuilder<Duration>(
+                    stream: _audioPlayer.positionStream,
+                    builder: (context, snapshot) {
+                      final position = snapshot.data ?? Duration.zero;
+                      final duration = _audioPlayer.duration ?? Duration.zero;
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(_formatDuration(position)),
+                            Text(_formatDuration(duration)),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+
+                  // Control buttons
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+
+                      IconButton(
+                        icon: const Icon(Icons.skip_previous),
+                        onPressed: () {},
+                      ),
+                      IconButton(
+                        icon: Icon(playing ?? false ? Icons.pause_circle_filled : Icons.play_circle_filled),
+                        iconSize: 48,
+                        onPressed: () async {
+                          try {
+                            if (playing ?? false) {
+                              await _audioPlayer.pause();
+                            } else {
+                              await _audioPlayer.play();
+                            }
+                          } catch (e) {
+                            print('Error playing audio: $e');
+                          }
+                        },
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.skip_next),
+                        onPressed: () {},
+                      ),
+
+                    ],
+                  ),
+                ],
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _audioPlayer.dispose();
+    super.dispose();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -308,14 +457,25 @@ class MedicineDetailPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 30),
-                  Text(
-                    'antihistamine'.tr(),
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textColor,
-                    ),
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'antihistamine'.tr(),
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.textColor,
+                        ),
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.play_circle_filled),
+                        iconSize: 32,
+                        onPressed: _showAudioPlayerDialog,
+                      ),
+                    ],
+                  )
+                  ,
                   SizedBox(height: 10),
                   Text(
                     'antihistamine_description'.tr(),
@@ -404,7 +564,6 @@ class MedicineDetailPage extends StatelessWidget {
                           context: context,
                           builder: (context) => ScheduleEditorDialog(
                             medicineName: 'antihistamine'.tr(),
-
                           ),
                         );
 

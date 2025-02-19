@@ -32,7 +32,8 @@ class AdviceScreen extends StatelessWidget {
                 expandedHeight: 50.0,
                 backgroundColor: AppColors.backgroundColor,
                 flexibleSpace: FlexibleSpaceBar(
-                  title: Text('health_advices'.tr()),
+                  title: Text('health_advices'.tr(),
+                  style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
               ),
               SliverToBoxAdapter(
@@ -60,7 +61,19 @@ class AdviceScreen extends StatelessWidget {
       child: InkWell(
         onTap: () => _showAdviceDialog(context, advice),
         child: Container(
-          color: AppColors.tertiaryColor.withOpacity(0.1),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            color: AppColors.tertiaryColor.withOpacity(0.8),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1), // Soft shadow
+                blurRadius: 4, // Smooth blur
+                spreadRadius: 2, // Slight spread
+                offset: Offset(0, 4), // Downward shadow for depth
+              ),
+            ],
+          ),
+
           child: Padding(
             padding: EdgeInsets.all(16),
             child: Row(
@@ -101,6 +114,7 @@ class AdviceScreen extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          backgroundColor: Colors.white,
           title: Text(advice.illnessName),
           content: SingleChildScrollView(
             child: ListBody(
@@ -109,7 +123,7 @@ class AdviceScreen extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(Icons.check_circle, color: Colors.green, size: 20),
+                    Icon(Icons.check_circle, color: AppColors.primaryColor, size: 20),
                     SizedBox(width: 8),
                     Expanded(child: Text(item)),
                   ],
@@ -119,10 +133,20 @@ class AdviceScreen extends StatelessWidget {
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('close'.tr()),
+
+              style: TextButton.styleFrom(foregroundColor: AppColors.primaryColor),
+
+
               onPressed: () {
                 Navigator.of(context).pop();
               },
+
+              child: Text(
+                  'close'.tr(),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                ),
+              ),
             ),
           ],
         );
