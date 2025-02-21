@@ -477,12 +477,18 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
                   )
                   ,
                   SizedBox(height: 10),
-                  Text(
-                    'antihistamine_description'.tr(),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: AppColors.subtitleColor,
-                      height: 1.5,
+                  SizedBox(
+                    height: 120, // Set a fixed height
+                    width: double.infinity, // Adjust width as needed
+                    child: SingleChildScrollView(
+                      child: Text(
+                        'antihistamine_description'.tr(),
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: AppColors.subtitleColor,
+                          height: 1.5,
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(height: 20),

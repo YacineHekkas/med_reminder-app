@@ -1,6 +1,8 @@
 {
   "hello_name": "Welcome back {}",
+  "name": "made with ❤\uFE0F by Belkessa sabrina",
   "medicines_for": "Your medicines for ",
+  "alarm_path": "en_alarm",
   "today": "today",
   "next_medicine": "Your medicine ",
   "bp_medicine_instruction": "Don't forget to take your pills",
@@ -9,8 +11,8 @@
   "ibuprofen_tablets": "Advice for your health",
   "ibuprofen_instruction": "Get to know yourself better and discover the best advice tailored just for you.",
   "your_medicine": "Your Medicine",
-  "antihistamine": "Antihistamine",
-  "antihistamine_description": "Antihistamines are medications commonly used to relieve symptoms of allergies, such as fever, rash, conjunctivitis, or allergic reactions to insect bites or stings.",
+  "antihistamine": "Biocur-bel",
+  "antihistamine_description": "Welcome to our application dedicated to natural anti-inflammatory solutions based on curcumin. Discover how the power of turmeric can help relieve joint pain and improve your daily well-being. Our app offers personalized advice, detailed information, and practical tips to effectively integrate curcumin into your health routine.",
   "after_breakfast": "After Breakfast",
   "after_lunch": "After Lunch",
   "after_dinner": "After Dinner",
@@ -206,48 +208,60 @@
   "advices": [
     {
       "id": "1",
-      "illnessName": "Common Cold",
+      "illnessName": "Advice for Cancer Patients",
       "imgPath": "assets/images/ill4.png",
       "advices": [
-        "Rest and sleep",
-        "Stay hydrated",
-        "Gargle with salt water",
-        "Use a humidifier"
+        "Reduces inflammation and supports immunity thanks to curcumin",
+        "Used as a supportive supplement, not a replacement for medical treatments",
+        "Improves absorption when consumed with black pepper or healthy fats",
+        "Consume in moderation as a spice in food, avoiding high doses without medical consultation",
+        "Supports digestive health and enhances the body's resistance to diseases",
+        "Medical follow-up is essential to avoid any interaction with treatments",
+        "A healthy lifestyle including balanced nutrition, exercise, and good sleep enhances benefits"
       ]
     },
     {
       "id": "2",
-      "illnessName": "Flu",
+      "illnessName": "Advice for Diabetes Patients",
       "imgPath": "assets/images/ill1.png",
       "advices": [
-        "Get plenty of rest",
-        "Drink fluids",
-        "Take over-the-counter pain relievers",
-        "Use a warm compress"
+        "Improves insulin sensitivity and helps stabilize blood sugar levels",
+        "Reduces inflammation and alleviates diabetes complications",
+        "Consumed in moderation as a spice or with milk",
+        "Better absorbed when taken with black pepper or healthy fats",
+        "Regular blood sugar monitoring is necessary to avoid severe drops",
+        "Supports digestion and improves gut health",
+        "Incorporate into a healthy lifestyle for optimal benefits"
       ]
     },
     {
       "id": "3",
-      "illnessName": "Headache",
+      "illnessName": "Advice for Heart Patients",
       "imgPath": "assets/images/ill2.png",
       "advices": [
-        "Rest in a quiet, dark room",
-        "Apply a cold or warm compress",
-        "Practice relaxation techniques",
-        "Stay hydrated"
+        "Improves blood vessel function: Curcumin helps regulate blood pressure and reduces heart disease risk",
+        "Powerful antioxidant: Reduces inflammation and oxidative stress associated with heart disease",
+        "Supports heart health: Contains vitamin B6, which helps reduce the harmful effects of homocysteine on blood vessels",
+        "Moderate consumption: High doses may interact with certain medications, especially blood thinners, so consulting a doctor is advised",
+        "Improves absorption: Best consumed with black pepper or healthy fats like olive oil",
+        "Healthy lifestyle: Combining turmeric with a balanced diet, regular physical activity, and stress management enhances heart health"
       ]
     },
     {
       "id": "4",
-      "illnessName": "Headache",
+      "illnessName": "Advice for Kidney Patients",
       "imgPath": "assets/images/ill3.png",
       "advices": [
-        "Rest in a quiet, dark room",
-        "Apply a cold or warm compress",
-        "Practice relaxation techniques",
-        "Stay hydrated"
+        "Reduces inflammation and supports kidney health when used wisely",
+        "Consume in moderation as a spice without overuse or concentrated supplements",
+        "Incorporate into a healthy diet that is low in potassium and rich in suitable vegetables",
+        "Better absorption when taken with healthy fats or black pepper",
+        "Regular medical follow-up is essential to monitor kidney function and prevent any negative effects",
+        "Adopt a healthy lifestyle by reducing sodium intake, exercising, and managing stress",
+        "Balance is key to gaining benefits without overloading the kidneys"
       ]
     }
   ]
+
 }
 

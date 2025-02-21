@@ -23,6 +23,18 @@ class MedicineTrackerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Center(
+                child: Text(
+                  'name'.tr(),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: AppColors.textColor,
+
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
               Stack(
                 children: [
                   Align(
@@ -45,6 +57,10 @@ class MedicineTrackerScreen extends StatelessWidget {
                     alignment: Alignment.centerRight,
                     child: LanguageSelector(),
                   ),
+                  // Align(
+                  //   alignment: Alignment.bottomLeft,
+                  //   child:
+                  // ),
                 ],
               ),
               const SizedBox(height: 20),
@@ -98,8 +114,7 @@ class MedicineTrackerScreen extends StatelessWidget {
               ),
 
               const SizedBox(height: 15),
-
-        GestureDetector(
+              GestureDetector(
           onTap: (){
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => RecipesScreen()));
           },
@@ -113,8 +128,7 @@ class MedicineTrackerScreen extends StatelessWidget {
         ),
 
               const SizedBox(height: 15),
-
-        GestureDetector(
+              GestureDetector(
           onTap: (){
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdviceScreen()));
           },
@@ -125,7 +139,8 @@ class MedicineTrackerScreen extends StatelessWidget {
                 color: AppColors.tertiaryColor,
                 imgPath: 'assets/images/plan.png',
               ),
-        )
+        ),
+
             ],
           ),
         ),
@@ -151,8 +166,11 @@ class LanguageSelector extends StatelessWidget {
 
         // Change app language
         context.setLocale(Locale(value));
+        await prefs.setString('alarm_title', 'alarm_title'.tr());
+        await prefs.setString('alarm_body', 'alarm_body'.tr());
+        await prefs.setString('alarm_path', 'alarm_path'.tr());
 
-        await AlarmController.updateTranslatedStrings();
+        // await AlarmController.updateTranslatedStrings();
 
       },
       itemBuilder: (BuildContext context) => [

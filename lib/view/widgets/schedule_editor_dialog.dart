@@ -334,8 +334,10 @@ class _ScheduleEditorDialogState extends State<ScheduleEditorDialog> {
                                   .map((schedule) => schedule.time)
                                   .toList();
 
+                              await AlarmController.getSavedAlarms();
                               await AlarmController.cancelAllAlarms();
                               await AlarmController.setAlarms(enabledSchedules);
+
 
                               Navigator.pop(context, schedulesNotifier.value);
                             },

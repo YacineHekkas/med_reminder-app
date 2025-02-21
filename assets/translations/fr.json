@@ -1,6 +1,8 @@
 {
   "hello_name": "Bienvenue à nouveau {}",
+  "name": "Fabriqué avec ❤\uFE0F par Belkessa Sabrina",
   "medicines_for": "Vos médicaments pour ",
+  "alarm_path": "fr_alarm",
   "today": "aujourd'hui",
   "next_medicine": "Votre médicament ",
   "bp_medicine_instruction": "N'oubliez pas de prendre vos médicaments",
@@ -10,8 +12,8 @@
   "ibuprofen_instruction": "Apprenez à mieux vous connaître et découvrez les meilleurs conseils adaptés à vous.",
 
   "your_medicine": "Votre médicament",
-  "antihistamine": "Antihistaminique",
-  "antihistamine_description": "Les antihistaminiques sont des médicaments couramment utilisés pour soulager les symptômes des allergies, tels que la fièvre, les éruptions cutanées, la conjonctivite ou les réactions allergiques aux piqûres ou morsures d'insectes.",
+  "antihistamine": "Biocur-bel",
+  "antihistamine_description": "Bienvenue sur notre application dédiée aux anti-inflammatoires naturels à base de curcumine. Découvrez comment la puissance du curcuma peut vous aider à soulager vos douleurs articulaires et à améliorer votre bien-être au quotidien. Notre application vous offre des conseils personnalisés, des informations détaillées et des astuces pratiques pour intégrer la curcumine efficacement dans votre routine  de santé.",
   "after_breakfast": "Après le petit-déjeuner",
   "after_lunch": "Après le déjeuner",
   "after_dinner": "Après le dîner",
@@ -176,47 +178,59 @@
   "advices": [
     {
       "id": "1",
-      "illnessName": "Rhume",
+      "illnessName": "Conseils pour les patients atteints de cancer",
       "imgPath": "assets/images/ill4.png",
       "advices": [
-        "Repos et sommeil",
-        "Rester hydraté",
-        "Se gargariser avec de l'eau salée",
-        "Utiliser un humidificateur"
+        "Réduit l'inflammation et renforce l'immunité grâce à la curcumine",
+        "Utilisé comme complément de soutien, et non comme un substitut aux traitements médicaux",
+        "Améliore l'absorption lorsqu'il est consommé avec du poivre noir ou des graisses saines",
+        "À consommer avec modération comme épice dans les aliments, en évitant les doses élevées sans consultation médicale",
+        "Favorise la santé digestive et renforce la résistance du corps aux maladies",
+        "Un suivi médical est essentiel pour éviter toute interaction avec les traitements",
+        "Un mode de vie sain incluant une alimentation équilibrée, de l'exercice et un bon sommeil optimise les bienfaits"
       ]
     },
     {
       "id": "2",
-      "illnessName": "Grippe",
+      "illnessName": "Conseils pour les patients diabétiques",
       "imgPath": "assets/images/ill1.png",
       "advices": [
-        "Se reposer suffisamment",
-        "Boire beaucoup de liquides",
-        "Prendre des antalgiques en vente libre",
-        "Utiliser une compresse chaude"
+        "Améliore la sensibilité à l'insuline et aide à stabiliser la glycémie",
+        "Réduit l'inflammation et atténue les complications du diabète",
+        "À consommer avec modération comme épice ou avec du lait",
+        "Mieux absorbé lorsqu'il est pris avec du poivre noir ou des graisses saines",
+        "Une surveillance régulière de la glycémie est nécessaire pour éviter les baisses sévères",
+        "Favorise la digestion et améliore la santé intestinale",
+        "À intégrer dans un mode de vie sain pour des bénéfices optimaux"
       ]
     },
     {
       "id": "3",
-      "illnessName": "Maux de tête",
+      "illnessName": "Conseils pour les patients cardiaques",
       "imgPath": "assets/images/ill2.png",
       "advices": [
-        "Se reposer dans une pièce calme et sombre",
-        "Appliquer une compresse froide ou chaude",
-        "Pratiquer des techniques de relaxation",
-        "Rester hydraté"
+        "Améliore la fonction vasculaire : La curcumine aide à réguler la pression artérielle et à réduire le risque de maladies cardiaques",
+        "Antioxydant puissant : Réduit l'inflammation et le stress oxydatif associé aux maladies cardiaques",
+        "Soutient la santé du cœur : Contient de la vitamine B6, qui réduit les effets nocifs de l'homocystéine sur les vaisseaux sanguins",
+        "Consommation modérée : Des doses élevées peuvent interagir avec certains médicaments, notamment les anticoagulants, donc il est conseillé de consulter un médecin",
+        "Améliore l'absorption : Idéalement consommé avec du poivre noir ou des graisses saines comme l'huile d'olive",
+        "Mode de vie sain : Associer le curcuma à une alimentation équilibrée, une activité physique régulière et une gestion du stress optimise la santé du cœur"
       ]
     },
     {
       "id": "4",
-      "illnessName": "Maux de tête",
+      "illnessName": "Conseils pour les patients atteints de maladies rénales",
       "imgPath": "assets/images/ill3.png",
       "advices": [
-        "Se reposer dans une pièce calme et sombre",
-        "Appliquer une compresse froide ou chaude",
-        "Pratiquer des techniques de relaxation",
-        "Rester hydraté"
+        "Réduit l'inflammation et soutient la santé des reins lorsqu'il est utilisé avec précaution",
+        "À consommer avec modération comme épice, sans excès ni compléments concentrés",
+        "À intégrer dans un régime alimentaire sain, pauvre en potassium et riche en légumes adaptés",
+        "Mieux absorbé lorsqu'il est consommé avec des graisses saines ou du poivre noir",
+        "Un suivi médical régulier est essentiel pour surveiller la fonction rénale et éviter les effets indésirables",
+        "Adopter un mode de vie sain en réduisant le sodium, en pratiquant une activité physique et en gérant le stress",
+        "L’équilibre est la clé pour bénéficier des bienfaits sans surcharger les reins"
       ]
     }
   ]
+
 }

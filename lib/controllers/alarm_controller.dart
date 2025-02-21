@@ -179,6 +179,10 @@ class AlarmController {
   static Future<List<TimeOfDay>> getSavedAlarms() async {
     final prefs = await SharedPreferences.getInstance();
     final savedTimes = prefs.getStringList('alarmTimes') ?? [];
+    final lan = prefs.getString('locale');
+
+    print("------------Saved Alarms: $lan"); // Print the saved alarms
+
     return savedTimes.map((timeString) {
       final parts = timeString.split(':');
       return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
@@ -189,6 +193,7 @@ class AlarmController {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('alarm_title', 'alarm_title'.tr());
     await prefs.setString('alarm_body', 'alarm_body'.tr());
+    await prefs.setString('alarm_path', 'alarm_path'.tr());
   }
 
   @pragma('vm:entry-point')
@@ -200,18 +205,27 @@ class AlarmController {
   @pragma('vm:entry-point')
   static Future<void> _showNotification() async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.reload();
 
     // Retrieve translated strings
     final title = prefs.getString('alarm_title') ?? 'Reminder';
     final body = prefs.getString('alarm_body') ?? 'Time to take your medicine';
-    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+    final path = prefs.getString('alarm_path') ?? 'ar_alarm';
+
+    print("Loaded Notification Data: title=$title, body=$body, path=$path");
+
+    String channelId = "alarm_channel_$path";
+
+
+
+    AndroidNotificationDetails androidPlatformChannelSpecifics =
     AndroidNotificationDetails(
-      'alarm_channel',
+      channelId,
       'Alarms',
       channelDescription: 'Channel for alarm notifications',
       importance: Importance.max,
       priority: Priority.high,
-      sound: RawResourceAndroidNotificationSound('alarm_sound'),
+      sound: RawResourceAndroidNotificationSound(path),
       playSound: true,
       enableVibration: true,
       enableLights: true,
@@ -219,7 +233,7 @@ class AlarmController {
       category: AndroidNotificationCategory.alarm,
     );
 
-    const NotificationDetails platformChannelSpecifics =
+    NotificationDetails platformChannelSpecifics =
     NotificationDetails(android: androidPlatformChannelSpecifics);
 
     await flutterLocalNotificationsPlugin.show(

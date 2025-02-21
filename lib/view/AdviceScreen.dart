@@ -63,7 +63,7 @@ class AdviceScreen extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(12)),
-            color: AppColors.tertiaryColor.withOpacity(0.8),
+            color: AppColors.primaryColor,
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.1), // Soft shadow
