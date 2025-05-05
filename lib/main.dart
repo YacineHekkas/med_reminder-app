@@ -11,20 +11,20 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-FlutterLocalNotificationsPlugin();
-const AndroidInitializationSettings initializationSettingsAndroid =
-AndroidInitializationSettings('@mipmap/ic_launcher');
-const InitializationSettings initializationSettings =
-InitializationSettings(android: initializationSettingsAndroid);
-await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+  const AndroidInitializationSettings initializationSettingsAndroid =
+      AndroidInitializationSettings('@mipmap/ic_launcher');
+  const InitializationSettings initializationSettings =
+      InitializationSettings(android: initializationSettingsAndroid);
+  await flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
-await flutterLocalNotificationsPlugin
-    .resolvePlatformSpecificImplementation<
-AndroidFlutterLocalNotificationsPlugin>()
-    ?.requestNotificationsPermission();
+  await flutterLocalNotificationsPlugin
+      .resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin>()
+      ?.requestNotificationsPermission();
 
-await AndroidAlarmManager.initialize();
+  await AndroidAlarmManager.initialize();
 
   final prefs = await SharedPreferences.getInstance();
   String savedLocale = prefs.getString('locale') ?? 'fr';
@@ -56,5 +56,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

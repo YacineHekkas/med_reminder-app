@@ -66,7 +66,7 @@ class FoodSuggestionCard extends StatelessWidget {
                     color: Colors.grey[600],
                   ),
                   overflow: TextOverflow.ellipsis, // Adds "..." when text overflows
-                  maxLines: 2, // Limits to one line
+                  maxLines: 5, // Limits to one line
                 ),
               ],
             ),

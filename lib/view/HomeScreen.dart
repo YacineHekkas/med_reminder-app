@@ -7,6 +7,7 @@ import 'package:untitled_med/view/MedicineDetailPage.dart';
 
 import '../constant/colors.dart';
 import '../controllers/alarm_controller.dart';
+import 'CreamDetailPage.dart';
 import 'PlannerMenuScreen.dart';
 import 'RecipesScreen.dart';
 
@@ -20,128 +21,144 @@ class MedicineTrackerScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Text(
-                  'name'.tr(),
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: AppColors.textColor,
+          child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: Text(
+                    'name'.tr(),
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.textColor,
 
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      width: 90,
-                      height: 90,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: AssetImage(
-                              'assets/images/avatar.png'
+                const SizedBox(height: 10),
+                Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: Container(
+                        width: 90,
+                        height: 90,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                            image: AssetImage(
+                                'assets/images/avatar.png'
+                            ),
+                            fit: BoxFit.cover,
                           ),
-                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                  ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: LanguageSelector(),
-                  ),
-                  // Align(
-                  //   alignment: Alignment.bottomLeft,
-                  //   child:
-                  // ),
-                ],
-              ),
-              const SizedBox(height: 20),
-
-              Center(
-                child: Text(
-                  'hello_name'.tr(args: ['']),
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.textColor,
-                  ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: LanguageSelector(),
+                    ),
+                    // Align(
+                    //   alignment: Alignment.bottomLeft,
+                    //   child:
+                    // ),
+                  ],
                 ),
-              ),
-              const SizedBox(height: 10),
+                const SizedBox(height: 20),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'medicines_for'.tr(),
+                Center(
+                  child: Text(
+                    'hello_name'.tr(args: ['']),
                     style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w600,
                       color: AppColors.textColor,
                     ),
                   ),
-                  Text(
-                    'today'.tr(),
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(height: 20),
-
-              GestureDetector(
-                onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => MedicineDetailPage()));
-                },
-                child: MedicineCard(
-                  title: 'next_medicine'.tr(),
-                  subtitle: 'bp_medicine_instruction'.tr(),
-                  color: AppColors.primaryColor,
-                  imgPath: 'assets/images/boite.png',
                 ),
-              ),
+                const SizedBox(height: 10),
 
-              const SizedBox(height: 15),
-              GestureDetector(
-          onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => RecipesScreen()));
-          },
-          child:
-          MedicineCard(
-                title: 'bactrium_tablets'.tr(),
-                subtitle: 'bactrium_instruction'.tr(),
-                color: AppColors.secondaryColor,
-                imgPath: 'assets/images/food.png',
-              ),
-        ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'medicines_for'.tr(),
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.textColor,
+                      ),
+                    ),
+                    Text(
+                      'today'.tr(),
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
 
-              const SizedBox(height: 15),
-              GestureDetector(
-          onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdviceScreen()));
-          },
-          child:
-          MedicineCard(
-                title: 'ibuprofen_tablets'.tr(),
-                subtitle: 'ibuprofen_instruction'.tr(),
-                color: AppColors.tertiaryColor,
-                imgPath: 'assets/images/plan.png',
-              ),
-        ),
+                const SizedBox(height: 20),
 
-            ],
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => MedicineDetailPage()));
+                  },
+                  child: MedicineCard(
+                    title: 'next_medicine'.tr(),
+                    subtitle: 'bp_medicine_instruction'.tr(),
+                    color: AppColors.primaryColor,
+                    imgPath: 'assets/images/boite.png',
+                  ),
+                ),
+                const SizedBox(height: 20),
+
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => CreamDetailPage()));
+                  },
+                  child: MedicineCard(
+                    title: 'next_cream'.tr(),
+                    subtitle: 'cream_instruction'.tr(),
+                    color: AppColors.secondaryColor,
+                    imgPath: 'assets/images/cream.png',
+                  ),
+                ),
+
+                const SizedBox(height: 15),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => RecipesScreen()));
+                  },
+                  child:
+                  MedicineCard(
+                    title: 'bactrium_tablets'.tr(),
+                    subtitle: 'bactrium_instruction'.tr(),
+                    color: AppColors.tertiaryColor,
+                    imgPath: 'assets/images/food.png',
+                  ),
+                ),
+
+                const SizedBox(height: 15),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdviceScreen()));
+                  },
+                  child:
+                  MedicineCard(
+                    title: 'ibuprofen_tablets'.tr(),
+                    subtitle: 'ibuprofen_instruction'.tr(),
+                    color: AppColors.primaryColor,
+                    imgPath: 'assets/images/plan.png',
+                  ),
+                ),
+
+              ],
+            ),
           ),
         ),
       ),
@@ -164,12 +181,17 @@ class LanguageSelector extends StatelessWidget {
 
         await prefs.setString('locale', value);
 
+
+
+
+
         // Change app language
         context.setLocale(Locale(value));
+
         await prefs.setString('alarm_title', 'alarm_title'.tr());
         await prefs.setString('alarm_body', 'alarm_body'.tr());
         await prefs.setString('alarm_path', 'alarm_path'.tr());
-
+        await prefs.setString('audio', 'assets/${value}_audio.mp3');
         // await AlarmController.updateTranslatedStrings();
 
       },

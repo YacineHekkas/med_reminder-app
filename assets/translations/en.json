@@ -6,13 +6,16 @@
   "today": "today",
   "next_medicine": "Your medicine ",
   "bp_medicine_instruction": "Don't forget to take your pills",
+
+  "next_cream": "Your cream",
+  "cream_instruction": "Don't forget to apply your cream",
   "bactrium_tablets": "Recipes ",
   "bactrium_instruction": "Take a look at delicious healthy food",
   "ibuprofen_tablets": "Advice for your health",
   "ibuprofen_instruction": "Get to know yourself better and discover the best advice tailored just for you.",
   "your_medicine": "Your Medicine",
-  "antihistamine": "Biocur-bel",
-  "antihistamine_description": "Welcome to our application dedicated to natural anti-inflammatory solutions based on curcumin. Discover how the power of turmeric can help relieve joint pain and improve your daily well-being. Our app offers personalized advice, detailed information, and practical tips to effectively integrate curcumin into your health routine.",
+  "antihistamine": "Biocur-Bel-SAB",
+  "antihistamine_description": "Capsules with Curcuminoids – Natural Anti-inflammatories\nFormulated from concentrated curcumin extracts, these capsules offer a natural solution to relieve chronic inflammatory pain (joints, muscles, digestion...). Thanks to their powerful antioxidant properties, they help strengthen the immune system, protect cells from oxidative stress, and improve daily comfort.\n100% natural, with no chemical additives.",
   "after_breakfast": "After Breakfast",
   "after_lunch": "After Lunch",
   "after_dinner": "After Dinner",
@@ -163,40 +166,46 @@
 
   "foodSuggestions": [
     {
-      "id": "1",
-      "title": "Good Thai",
-      "description": "20 Queen Street, NSW\nAsian, Thai",
-      "imageUrl": "assets/images/plate.png"
-    },
-    {
       "id": "2",
-      "title": "Spice Garden",
-      "description": "15 King Street, NSW\nIndian, Contemporary",
-      "imageUrl": "assets/images/plate.png"
+      "title": "Vitamin D",
+      "description": "Sources: sun exposure, egg yolk, cod liver, fortified milk.",
+      "imageUrl": "assets/images/d.png"
     },
     {
       "id": "3",
-      "title": "Good Thai",
-      "description": "20 Queen Street, NSW\nAsian, Thai",
-      "imageUrl": "assets/images/plate.png"
+      "title": "Vitamin C (powerful antioxidant)",
+      "description": "Sources: citrus fruits, strawberries, bell pepper, kiwi, parsley.",
+      "imageUrl": "assets/images/c.png"
     },
     {
       "id": "4",
-      "title": "Spice Garden",
-      "description": "15 King Street, NSW\nIndian, Contemporary",
-      "imageUrl": "assets/images/plate.png"
+      "title": "Zinc",
+      "description": "Sources: seafood, meat, pumpkin seeds, lentils.",
+      "imageUrl": "assets/images/zn.png"
     },
     {
       "id": "5",
-      "title": "Good Thai",
-      "description": "20 Queen Street, NSW\nAsian, Thai",
-      "imageUrl": "assets/images/plate.png"
+      "title": "Magnesium",
+      "description": "Sources: dark chocolate, banana, legumes, almonds, spinach.",
+      "imageUrl": "assets/images/mg.png"
     },
     {
       "id": "6",
-      "title": "Spice Garden",
-      "description": "15 King Street, NSW\nIndian, Contemporary",
-      "imageUrl": "assets/images/plate.png"
+      "title": "Polyphenols (antioxidant compounds)",
+      "description": "Sources: green tea, pure cocoa, berries, extra virgin olive oil.",
+      "imageUrl": "assets/images/poly.png"
+    },
+    {
+      "id": "7",
+      "title": "High-quality proteins",
+      "description": "Sources: eggs, fish, poultry, legumes, tofu.",
+      "imageUrl": "assets/images/p.png"
+    },
+    {
+      "id": "1",
+      "title": "Omega-3 (anti-inflammatory fatty acids)",
+      "description": "Sources: fatty fish (salmon, sardine, mackerel), flaxseeds, walnuts, canola oil.",
+      "imageUrl": "assets/images/om3.png"
     }
   ],
 
@@ -261,7 +270,24 @@
         "Balance is key to gaining benefits without overloading the kidneys"
       ]
     }
-  ]
+  ],
+
+  "name_of_cream": "SabriGold cuma",
+  "cream_description": "1. Présentation de la crème\n\nNom du produit : Crème réparatrice au curcuma\nType : Soin naturel anti-inflammatoire et cicatrisant\nPublic ciblé : Peaux irritées, peaux sensibles, cicatrices récentes\n2. Bienfaits principaux\nAnti-inflammatoire : Grâce à la curcumine contenue dans l’huile essentielle de curcuma.\nCicatrisant : Le beurre de karité favorise la régénération cutanée.\nHydratant : L’huile de coco forme une barrière protectrice.\nApaisant : L’huile essentielle de lavande calme les irritations et les démangeaisons.\nAntibactérien naturel : Idéal pour prévenir les infections cutanées.\n\n3. Conseils d’utilisation\nAppliquer matin et/ou soir sur une peau propre et sèche.\nMasser doucement en mouvements circulaires.\nNon-comédogène, peut être utilisée sur le visage (en petite quantité).\n5. Précautions d’emploi\nTest cutané recommandé avant la première utilisation.\nNe pas appliquer sur une plaie ouverte ou infectée.\nÉviter le contour des yeux et les muqueuses.\nDéconseillé aux femmes enceintes/allaitantes sans avis médical.\nConserver à l’abri de la lumière et de la chaleur.",
+
+  "cream_1": "• Cream Overview",
+  "cream_1desc": "Product name: Turmeric Repair Cream\nType: Natural anti-inflammatory and healing skincare\nTarget audience: Irritated skin, sensitive skin, recent scars",
+
+  "cream_2": "• Main Benefits",
+  "cream_2desc": "Anti-inflammatory thanks to curcumin contained in turmeric essential oil. Healing with shea butter that promotes skin regeneration. Moisturizing due to coconut oil that forms a protective barrier. Soothing thanks to lavender essential oil that calms irritation and itching. Natural antibacterial, ideal for preventing skin infections.",
+
+  "cream_3": "• Usage Instructions",
+  "cream_3desc": "Apply morning and/or evening to clean, dry skin. Gently massage in circular motions. Non-comedogenic, can be used on the face in small amounts.",
+
+  "cream_4": "• Usage Precautions",
+  "cream_4desc": "Skin test recommended before first use. Do not apply to open or infected wounds. Avoid the eye area and mucous membranes. Not recommended for pregnant or breastfeeding women without medical advice. Store away from light and heat.",
+  "3_fois_per_day": "3 fois par jour",
+  "2_fois_per_day": "2 fois par jour"
 
 }
 

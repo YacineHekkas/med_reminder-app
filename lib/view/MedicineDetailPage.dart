@@ -7,270 +7,12 @@ import 'package:untitled_med/view/widgets/schedule_editor_dialog.dart';
 
 import '../constant/colors.dart';
 
-// class MedicineDetailPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       appBar: AppBar(
-//         backgroundColor: Colors.white,
-//         elevation: 0,
-//         leading: IconButton(
-//           icon: Icon(Icons.arrow_back, color: Colors.black),
-//           onPressed: () => Navigator.pop(context),
-//         ),
-//         title: Text(
-//           'Your Medicine',
-//           style: TextStyle(
-//             color: Colors.black,
-//             fontSize: 20,
-//             fontWeight: FontWeight.w600,
-//           ),
-//         ),
-//
-//       ),
-//       body: SingleChildScrollView(
-//         child: Padding(
-//           padding: const EdgeInsets.all(20.0),
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//             children: [
-//
-//               // Pill Image
-//               Column(
-//                 crossAxisAlignment: CrossAxisAlignment.start,
-//
-//                 children: [
-//                   Center(
-//                     child: Container(
-//
-//                       child: Stack(
-//                         children: [
-//                           Image.asset(
-//                             "assets/images/pill.png",
-//                             width: 190,
-//                             height: 190,
-//                           )
-//                         ],
-//                       ),
-//                     ),
-//                   ),
-//                   SizedBox(height: 30),
-//
-//                   // Medicine Name
-//                   Text(
-//                     'Antihistamine',
-//                     style: TextStyle(
-//                       fontSize: 28,
-//                       fontWeight: FontWeight.bold,
-//                     ),
-//                   ),
-//                   SizedBox(height: 10),
-//
-//                   // Description
-//                   Text(
-//                     'Antihistamines are medications commonly used to relieve symptoms of allergies, such as fever, rash, conjunctivitis, or allergic reactions to insect bites or stings.',
-//                     style: TextStyle(
-//                       fontSize: 16,
-//                       color: Colors.grey[600],
-//                       height: 1.5,
-//                     ),
-//                   ),
-//                   SizedBox(height: 20),
-//
-//                   // Timing Tags
-//                   SingleChildScrollView(
-//                     scrollDirection: Axis.horizontal,
-//                     child: Row(
-//                       children: [
-//                         Container(
-//                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-//                           decoration: BoxDecoration(
-//                             color: Color(0xfff4c430).withOpacity(0.6),
-//                             borderRadius: BorderRadius.circular(20),
-//                           ),
-//                           child: Text(
-//                             'After Breakfast',
-//                             style: TextStyle(
-//                               color: Colors.orange,
-//                               fontWeight: FontWeight.w500,
-//                             ),
-//                           ),
-//                         ),
-//                         SizedBox(width: 10),
-//                         Container(
-//                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-//                           decoration: BoxDecoration(
-//                             color: Color(0xffa8915f).withOpacity(0.6),
-//                             borderRadius: BorderRadius.circular(20),
-//                           ),
-//                           child: Text(
-//                             'After lunch',
-//                             style: TextStyle(
-//                               color: Colors.brown,
-//                               fontWeight: FontWeight.w500,
-//                             ),
-//                           ),
-//                         ),
-//                         SizedBox(width: 10),
-//                         Container(
-//                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-//                           decoration: BoxDecoration(
-//                             color: Colors.teal.shade50,
-//                             borderRadius: BorderRadius.circular(20),
-//                           ),
-//                           child: Text(
-//                             'After Dinner',
-//                             style: TextStyle(
-//                               color: Colors.teal,
-//                               fontWeight: FontWeight.w500,
-//                             ),
-//                           ),
-//                         ),
-//                       ],
-//                     ),
-//                   ),
-//                   SizedBox(height: 30),
-//
-//                   // Info Grid
-//                   Row(
-//                     children: [
-//                       Expanded(
-//                         child: InfoItem(
-//                           icon: Icons.access_time,
-//                           title: 'Amount',
-//                           value: '3 pills/day',
-//                           iconColor: Colors.blue,
-//                         ),
-//                       ),
-//                       Expanded(
-//                         child: InfoItem(
-//                           icon: Icons.calendar_today,
-//                           title: 'Month',
-//                           value: '14/31 taken',
-//                           iconColor: Colors.pink,
-//                         ),
-//                       ),
-//                     ],
-//                   ),
-//                   SizedBox(height: 20),
-//                   Row(
-//                     children: [
-//                       Expanded(
-//                         child: InfoItem(
-//                           icon: Icons.medical_services_outlined,
-//                           title: 'Cause',
-//                           value: '',
-//                           iconColor: Colors.purple,
-//                         ),
-//                       ),
-//                       Expanded(
-//                         child: InfoItem(
-//                           icon: Icons.medication_outlined,
-//                           title: 'Cap Size',
-//                           value: '',
-//                           iconColor: Colors.orange,
-//                         ),
-//                       ),
-//                     ],
-//                   ),
-//                   SizedBox(height: 30),
-//                 ],
-//               ),
-//
-//               // Bottom Buttons
-//               Row(
-//                 children: [
-//
-//                   Expanded(
-//                     child: // In your MedicineDetailPage class, update the Edit Schedule button:
-//
-//                     ElevatedButton(
-//                       onPressed: () async {
-//                         final result = await showDialog(
-//                           context: context,
-//                           builder: (context) => ScheduleEditorDialog(
-//                             medicineName: 'Antihistamine',
-//                             initialTimes: null, // Pass saved times here if available
-//                           ),
-//                         );
-//
-//                         if (result != null) {
-//                           // Handle the updated schedules
-//                           // You might want to update your UI or state here
-//                         }
-//                       },
-//                       child: Text('Edit Schedule',
-//                       style: TextStyle(color: Colors.black),),
-//                       style: ElevatedButton.styleFrom(
-//                         padding: EdgeInsets.symmetric(vertical: 16),
-//                         backgroundColor: Color(0xfff4c430),
-//                         shape: RoundedRectangleBorder(
-//                           borderRadius: BorderRadius.circular(16),
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-//
-// class InfoItem extends StatelessWidget {
-//   final IconData icon;
-//   final String title;
-//   final String value;
-//   final Color iconColor;
-//
-//   const InfoItem({
-//     Key? key,
-//     required this.icon,
-//     required this.title,
-//     required this.value,
-//     required this.iconColor,
-//   }) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       crossAxisAlignment: CrossAxisAlignment.start,
-//       children: [
-//         Row(
-//           children: [
-//             Icon(icon, color: iconColor, size: 20),
-//             SizedBox(width: 8),
-//             Text(
-//               title,
-//               style: TextStyle(
-//                 color: Colors.grey[600],
-//                 fontSize: 14,
-//               ),
-//             ),
-//           ],
-//         ),
-//         SizedBox(height: 4),
-//         Text(
-//           value.isNotEmpty ? value : '-',
-//           style: TextStyle(
-//             fontSize: 16,
-//             fontWeight: FontWeight.w500,
-//           ),
-//         ),
-//       ],
-//     );
-//   }
-// }
-//
 
 class MedicineDetailPage extends StatefulWidget {
   @override
   _MedicineDetailPageState createState() => _MedicineDetailPageState();
 }
+
 class _MedicineDetailPageState extends State<MedicineDetailPage> {
   final AudioPlayer _audioPlayer = AudioPlayer();
 
@@ -279,7 +21,12 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
   void initState() {
     super.initState();
     _initAudioSession();
-    _initAudioPlayer();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _initAudioPlayer(); // Safe to use context here
   }
 
   Future<void> _initAudioSession() async {
@@ -289,7 +36,16 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
 
   Future<void> _initAudioPlayer() async {
     try {
-      await _audioPlayer.setAsset("assets/audio/test.mp3");
+      String audioFile = 'assets/audio/fr_audio.mp3'; // Default to English
+      Locale? currentLocale = EasyLocalization.of(context)?.locale;
+
+      // Check the current locale and set the audio file accordingly
+      if (currentLocale?.languageCode == 'ar') {
+        audioFile = 'assets/audio/ar_audio.mp3';
+      } else if (currentLocale?.languageCode == 'en') {
+        audioFile = 'assets/audio/en_audio.mp3';
+      }
+      await _audioPlayer.setAsset(audioFile);
     } catch (e) {
       print('Error loading audio: $e');
     }
@@ -304,14 +60,12 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
 
   void _showAudioPlayerDialog() {
     showDialog(
-
       context: context,
       builder: (context) => Dialog(
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24)  ,
             color: Colors.white70,
-
           ),
           padding: const EdgeInsets.all(20),
           child: StreamBuilder<PlayerState>(
@@ -434,11 +188,12 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
+      body: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -478,7 +233,7 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
                   ,
                   SizedBox(height: 10),
                   SizedBox(
-                    height: 120, // Set a fixed height
+                    height: MediaQuery.of(context).size.height/4.2, // Set a fixed height
                     width: double.infinity, // Adjust width as needed
                     child: SingleChildScrollView(
                       child: Text(
@@ -527,38 +282,11 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
                           iconColor: Colors.blue,
                         ),
                       ),
-                      Expanded(
-                        child: InfoItem(
-                          icon: Icons.calendar_today,
-                          title: 'month'.tr(),
-                          value: '14_31_taken'.tr(),
-                          iconColor: Colors.pink,
-                        ),
-                      ),
+
                     ],
                   ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: InfoItem(
-                          icon: Icons.medical_services_outlined,
-                          title: 'cause'.tr(),
-                          value: '',
-                          iconColor: Colors.purple,
-                        ),
-                      ),
-                      Expanded(
-                        child: InfoItem(
-                          icon: Icons.medication_outlined,
-                          title: 'cap_size'.tr(),
-                          value: '',
-                          iconColor: Colors.orange,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 30),
+                  SizedBox(height: 0),
+
                 ],
               ),
               Row(
@@ -593,7 +321,7 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
                 ],
               ),
             ],
-          ),
+
         ),
       ),
     );

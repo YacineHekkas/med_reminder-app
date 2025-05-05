@@ -6,14 +6,17 @@
   "today": "aujourd'hui",
   "next_medicine": "Votre médicament ",
   "bp_medicine_instruction": "N'oubliez pas de prendre vos médicaments",
+  "next_cream": "Votre crème",
+  "cream_instruction": "N'oubliez pas d'appliquer votre crème",
+
   "bactrium_tablets": "Recettes",
   "bactrium_instruction": "Découvrez des plats sains et délicieux",
   "ibuprofen_tablets": "Conseils pour votre santé",
   "ibuprofen_instruction": "Apprenez à mieux vous connaître et découvrez les meilleurs conseils adaptés à vous.",
 
   "your_medicine": "Votre médicament",
-  "antihistamine": "Biocur-bel",
-  "antihistamine_description": "Bienvenue sur notre application dédiée aux anti-inflammatoires naturels à base de curcumine. Découvrez comment la puissance du curcuma peut vous aider à soulager vos douleurs articulaires et à améliorer votre bien-être au quotidien. Notre application vous offre des conseils personnalisés, des informations détaillées et des astuces pratiques pour intégrer la curcumine efficacement dans votre routine  de santé.",
+  "antihistamine": "Biocur-Bel-SAB",
+  "antihistamine_description": "Gélules à base de curcuminoïdes – Anti-inflammatoires naturels\nFormulées à partir d’extraits concentrés de curcumine, ces gélules offrent une solution naturelle pour apaiser les douleurs inflammatoires chroniques (articulations, muscles, digestion…). Grâce à leurs propriétés antioxydantes puissantes, elles contribuent à renforcer le système immunitaire, à protéger les cellules du stress oxydatif et à améliorer le confort quotidien.\n100 % naturelles, sans additifs chimiques.",
   "after_breakfast": "Après le petit-déjeuner",
   "after_lunch": "Après le déjeuner",
   "after_dinner": "Après le dîner",
@@ -157,17 +160,48 @@
 
   "foodSuggestions": [
     {
-      "id": "1",
-      "title": "Bon Thaï",
-      "description": "20 Rue Queen, NSW\nAsiatique, Thaïlandais",
-      "imageUrl": "assets/images/plate.png"
+      "id": "2",
+      "title": "Vitamine D",
+      "description": "Sources : exposition au soleil, jaune d’œuf, foie de morue, lait enrichi.",
+      "imageUrl": "assets/images/d.png"
     },
     {
-      "id": "2",
-      "title": "Jardin des épices",
-      "description": "15 Rue King, NSW\nIndien, Contemporain",
-      "imageUrl": "assets/images/plate.png"
+      "id": "3",
+      "title": "Vitamine C (antioxydant puissant)",
+      "description": "Sources : agrumes, fraises, poivron, kiwi, persil.",
+      "imageUrl": "assets/images/c.png"
+    },
+    {
+      "id": "4",
+      "title": "Zinc",
+      "description": "Sources : fruits de mer, viande, graines de courge, lentilles.",
+      "imageUrl": "assets/images/zn.png"
+    },
+    {
+      "id": "5",
+      "title": "Magnésium",
+      "description": "Sources : chocolat noir, banane, légumineuses, amandes, épinards.",
+      "imageUrl": "assets/images/mg.png"
+    },
+    {
+      "id": "6",
+      "title": "Polyphénols (composés antioxydants)",
+      "description": "Sources : thé vert, cacao pur, fruits rouges, huile d’olive extra vierge.",
+      "imageUrl": "assets/images/poly.png"
+    },
+    {
+      "id": "7",
+      "title": "Protéines de qualité",
+      "description": "Sources : œufs, poissons, volailles, légumineuses, tofu.",
+      "imageUrl": "assets/images/p.png"
+    },
+    {
+      "id": "1",
+      "title": "Oméga-3 (acides gras anti-inflammatoires)",
+      "description": "Sources : poissons gras (saumon, sardine, maquereau), graines de lin, noix, huile de colza.",
+      "imageUrl": "assets/images/om3.png"
     }
+
   ],
 
   "health_advices": "Conseils de santé",
@@ -231,6 +265,22 @@
         "L’équilibre est la clé pour bénéficier des bienfaits sans surcharger les reins"
       ]
     }
-  ]
+  ],
+
+  "name_of_cream": "SabriGold cuma",
+
+  "cream_1": "• Présentation de la crème",
+  "cream_1desc": "Nom du produit : Crème réparatrice au curcuma\nType : Soin naturel anti-inflammatoire et cicatrisant\nPublic ciblé : Peaux irritées, peaux sensibles, cicatrices récentes",
+
+  "cream_2": "• Bienfaits principaux",
+  "cream_2desc": "Anti-inflammatoire grâce à la curcumine contenue dans l’huile essentielle de curcuma. Cicatrisant avec le beurre de karité qui favorise la régénération cutanée. Hydratant grâce à l’huile de coco qui forme une barrière protectrice. Apaisant avec l’huile essentielle de lavande qui calme les irritations et les démangeaisons. Antibactérien naturel, idéal pour prévenir les infections cutanées.",
+
+  "cream_3": "• Conseils d’utilisation",
+  "cream_3desc": "Appliquer matin et/ou soir sur une peau propre et sèche. Masser doucement en mouvements circulaires. Non-comédogène, peut être utilisée sur le visage en petite quantité.",
+
+  "cream_4": "• Précautions d’emploi",
+  "cream_4desc": "Test cutané recommandé avant la première utilisation. Ne pas appliquer sur une plaie ouverte ou infectée. Éviter le contour des yeux et les muqueuses. Déconseillé aux femmes enceintes ou allaitantes sans avis médical. Conserver à l’abri de la lumière et de la chaleur.",
+  "3_fois_per_day": "3 fois/day",
+  "2_fois_per_day": "2 fois/day"
 
 }

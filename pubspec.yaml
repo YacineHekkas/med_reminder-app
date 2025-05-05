@@ -45,6 +45,9 @@ flutter:
     - assets/translations/
     - assets/images/
     - assets/audio/
+    - assets/audio/ar_audio.mp3
+    - assets/audio/fr_audio.mp3
+    - assets/audio/en_audio.mp3
 
 
   # fonts:

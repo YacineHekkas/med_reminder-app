@@ -103,9 +103,11 @@ class _RecipesScreenState extends State<RecipesScreen> {
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return Center(child: CircularProgressIndicator());
-                    } else if (snapshot.hasError) {
+                    }
+                    else if (snapshot.hasError) {
                       return Center(child: Text('Error: ${snapshot.error}'));
-                    } else if (snapshot.hasData) {
+                    }
+                    else if (snapshot.hasData) {
                       return ListView.builder(
                         shrinkWrap: true,
                         physics: const BouncingScrollPhysics(),
@@ -117,7 +119,8 @@ class _RecipesScreenState extends State<RecipesScreen> {
                           );
                         },
                       );
-                    } else {
+                    }
+                    else {
                       return Center(child: Text('No data available'));
                     }
                   },
